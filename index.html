@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    
+        <link rel="stylesheet" href="style.css">
+<style>
+    body {
+    overflow-x: hidden;
+
+}
+
+.navbar-custom {
+    list-style: none;
+    margin: 5px 20px;
+
+}
+
+.button-custom {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.people-custom {
+    font-size: 30px;
+}
+
+.colleagues-custom {
+    font-size: 53px;
+}
+
+.footer-section ul li {
+    list-style: none;
+}
+
+#people {
+    margin-top: 100px;
+}
+
+#learning {
+    margin-top: 100px;
+}
+
+.footer-custom {
+    margin-top: 100px;
+}
+
+/* media queries for tablet */
+@media only screen and (min-width: 768px) and (max-width:1199px) {
+
+    /* navbar css */
+    .navbar-brand img {
+        margin-left: 17rem;
+
+    }
+
+    .navbar-custom {
+        margin: 0 auto;
+    }
+
+    /* content css */
+    .content-div {
+        padding-left: 20%;
+    }
+
+    .homeImg {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    /* people section */
+    #people{
+        margin-top: -70px;
+    }
+    #people h4{
+        margin: 0 64px;
+    }
+    #people .first-column h4 br {
+        display: none;
+    }
+    .first-column p br{
+        display: none;
+    }
+    .first-column p{
+        font-size: 20px;
+        margin: 10px 70px !important;
+    }
+    .second-column img{
+       margin-left: 10%;
+       margin-top: 20px;
+    }
+    /* colleagues section */
+    #learning{
+        margin-top: 3rem;
+    }
+    #learning p br{
+        display: none;
+    }
+    #learning p {
+        font-size: 34px;
+        margin: 0 58px;
+    }
+    #learning .button-custom{
+        margin: 0 60px;
+    }
+    
+    /* footer css */
+    .footer-custom{
+        margin-top: 44px;
+    }
+    .footer-custom .row{
+        padding-left: 52px;
+    }
+}
+
+/* for mobile */
+@media only screen and (max-width: 400px) {
+
+    #nax a{
+        margin-left: 10px;
+    }
+
+    #nax img{
+        margin-left: 5px;
+        }
+    #nax #naxapp{
+        margin-left: 20px;
+    }
+    .navbar-brand img {
+        margin-left: 120px;
+    }
+
+    .navbar-custom span {
+        margin-right: 36px !important;
+    }
+#nax button{
+    width: 100px;
+    height: 40px;
+}
+    .button-custom {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 12px;
+    }
+
+    #theim{
+       display: none;
+    }
+    
+
+    /* content section */
+    .content-div h1 {
+        padding-left: 28px;
+    }
+
+    .content-div .form-control {
+        width: 80% !important;
+        margin-left: 20px;
+    }
+
+    .content-div .button-custom {
+        width: 100% !important;
+    }
+
+    .content-div .forgot-pass {
+        padding-left: 24px;
+
+    }
+
+    .content-div .btn {
+        width: 80% !important;
+        margin-left: 20px;
+    }
+
+    .content-div p:nth-child(2) {
+        display: none;
+    }
+
+    .sign-in {
+        margin-top: 10px;
+    }
+
+    .homeImg {
+        width: 100%;
+        margin-top: -84px;
+    }
+
+    /* people section */
+    #people .row {
+        margin-top: -61%;
+    }
+
+    #people p {
+        font-size: 20px;
+    }
+
+    #people img {
+        width: 50% !important;
+        margin-top: 1px;
+        margin-left: 60px;
+    }
+
+    #rrr{
+        margin-left: 0px;
+        display: block;
+    }
+
+    #if{
+        /* width: 200px;
+        height: 300px;
+        margin: 0px;
+        padding: 0px; */
+        display: none;
+    }
+    
+    #jj{
+       display: none;
+    }
+
+    #rr1 img{
+        
+        padding: 0px;
+        margin-left: 1px;
+        width: 40px;
+        height: 30px;
+    }
+
+    #rrr1 button{
+        width: 100px;
+    }
+
+    #rrr2{
+        margin-left: 150px;
+    }
+    #rrr2 button{
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    #learning{
+        display: none;
+    }
+    /* colleagues section */
+    
+
+    .colleagues-custom {
+        width: 82vw;
+        font-size: 26px;
+    }
+
+    .colleagues-custom br {
+        display: none;
+    }
+
+    /* footer */
+    .footer-custom {
+        margin-top: 30px;
+    }
+
+    .footer-custom img {
+        margin-left: 32%;
+    }
+
+    .footer-section {
+        margin-right: 10%;
+        text-align: center;
+    }
+    
+}
+</style>
+
+
+</head>
+
+<body>
+    <!-- Navbar starts here -->
+    <nav id="nax" class="navbar bg-body-tertiary shadow-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img  src="images/logo.png" alt="Logo" width="120" height="40" class="d-inline-block align-text-top"> -->
+                <h1 class="d-inline-block align-text-top" style="font-weight: 600;">Linked</h1>
+                <img style="position:relative ; border-radius: 8px;" src="https://i.pinimg.com/originals/c8/69/70/c86970f7fa08ea411780daad78272b8d.gif" alt="" width="80" height="40" class="d-inline-block align-text-top" >
+                
+            </a>
+            <ul class="navbar justify-content-end navbar-custom">
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#">Articles</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#people">People</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#learning">Learning</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link" href="#footer">Jobs</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a id="naxapp" class="nav-link" href="#footer">Get the app</a>
+                </li>
+                <span class="ms-4 ">Join now</span>
+                <div class=" ms-5 ">
+                    <button type="button" class="btn btn-outline-primary rounded-pill button-custom ">Sign In</button>
+                </div>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <!-- content starts here -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class=" col-lg-6 col-md-12 content-div">
+                <h1 class="display-5" style="color: #8f5849;">Welcome to your <br>professional community. </h1>
+                <div class="form-input mt-4">
+                    <input class="form-control border-3" id="email" style="width: 70%;" type="text"
+                       autocomplete="off" placeholder="Email or phone number" aria-label="default input example">
+                    <input class="form-control border-3 mt-2" id="password" style="width: 70%;" type="password" placeholder="Password"
+                        aria-label="default input example">
+                    <p class="mt-2 forgot-pass">Forgot password?</p>
+                    <div>
+                        <button onclick="signInAlert()" style="width: 70%;" type="button"
+                            class="btn btn-primary rounded-pill p-3">Sign
+                            in</button>
+                        <p> ___________________________or____________________________</p>
+                        <button style="width: 70%;" type="button"
+                            class="btn btn-light rounded-pill p-3 border border-dark sign-in">Sign in with Google</button>
+                        <button style="width: 70%;" type="button"
+                            class="btn btn-light mt-3 rounded-pill p-3 border border-dark">New to LinkedIn? Join
+                            now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 ">
+                <img  id="theim" style=" border-top-right-radius: 260px;border-top-left-radius: 300px;border-bottom-left-radius: 100px; border-bottom-right-radius: 250px;" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/733e6785928537.5d927b15df365.gif" width="700" height="560" class="homeImg" alt="home-banner">
+
+            </div>
+        </div>
+    </div>
+    <!-- people section starts here -->
+
+    <div class="container" id="people" style="background-color: rgba(128, 128, 128, 0.168); height: 600px;">
+        <div class="row">
+            <div class="col-lg-6 col-md-12  mt-5 first-column" style="margin-top: 300px;">
+                <h4 class="display-5" style="color: #8f5849;margin-top: 100px;">Let the right people know <br> you’re open to work</h4>
+                <p class="display-5 people-custom">With the Open To Work feature, you can <br> privately tell recruiters
+                    or publicly share <br> with the LinkedIn community that you are looking for new job opportunities.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 second-column">
+                <div class="ms-5" style="margin-top: 100px;">
+                    <img style="width: 75%;" src="./images/people-banner.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="rrr" class="row" >
+        <div id="rrr1" class="col-4" style="margin: auto; padding: auto;">
+            <img style="margin-top: 50px ;" src="https://static.licdn.com/aero-v1/sc/h/b1fxwht7hdbeusleja7ciftsj" alt="">
+            <button class="btn btn-outline-dark" style="border-radius: 20px; margin-top: 50px;">Find People You Know</button>
+        </div>
+        <div id="rrr2" class="col-4" >
+            <img  style="margin-top: 50px ;" src="https://static.licdn.com/aero-v1/sc/h/dkfub4sc7jgzg3o31flfr91rv" alt="">
+            <button class="btn btn-outline-dark" style="margin-top: 50px;">Choose a topic to learn about</button>
+        </div>
+
+    </div><br><br>
+<div  id="if"  class="row m-0 p-0 "  style="height: 800px;" >
+    <div class="col-4">
+        <iframe style="position: relative; margin-left: 200px; margin-top: 220px;border-radius: 10px;" width="540" height="355" src="https://www.youtube.com/embed/IlYUUN8rL_Y?si=hrP1fMVOhqZYuDOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div  id="jj" class="col-4" style="background-color: azure; margin-left: 200px;width: 700px;">
+    <h3 style="color: #d55b39;margin-top: 300px; margin-left: 100px;">In it to chase my dream</h3>
+    <p style="margin-left: 100px;font-size: xx-large;font-weight: lighter;">Check out Gayatri’s story of <br>finding a new job on LinkedIn</p>
+    
+    </div>
+</div>
+
+
+
+
+    <!-- join our colleagues starts here -->
+
+    <div class="container-fluid" id="learning">
+        <div id="k"  class="row"  style="background-image: url(./images/LinkedIn_\ Log\ In\ or\ Sign\ Up\ and\ 6\ more\ pages\ -\ Personal\ -\ Microsoft​\ Edge\ 2_23_2024\ 9_50_08\ AM.png);width: 2000px; height: 900px;">
+            <div id="maind" class="col-lg-12 ps-5">
+                <!-- <p class="display-5 colleagues-custom">Join your colleagues, classmates, and friends on <br> LinkedIn.
+                </p> -->
+
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- footer starts here -->
+    <footer class="bg-dark text-white pt-5 pb-5 footer-custom" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="images/logo.png" alt="Logo" width="120" height="40" class="d-inline-block align-text-top">
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-section">
+                        <ul>
+                            <li><strong> General</strong></li>
+                            <li>Sign Up</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Help center</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-section">
+                        <ul>
+                            <li><strong> Browse LinkedIn</strong></li>
+                            <li>Learning</li>
+                            <li>Jobs</li>
+                            <li>Salary</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-section">
+                        <ul>
+                            <li><strong> Business Solutions</strong></li>
+                            <li>Talent</li>
+                            <li>Marketing</li>
+                            <li>Sales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="developer-custom text-center fs-">sibinabram@gmail.com</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script>
+        // handling error user enter nothing in input box
+        function signInAlert() {
+            let email=document.getElementById("email")
+            let password=document.getElementById("password")
+            if(email.value==="" && password.value===""){
+                alert("Enter your email to Sign In")
+            }else{
+                alert("Welcome " + email.value)
+                email.value=""
+                password.value=""
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
